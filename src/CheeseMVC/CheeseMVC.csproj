@@ -2,6 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <PreserveCompilationContext>true</PreserveCompilationContext>
+    <AssemblyName>CheeseMVC</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>CheeseMVC</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,6 +21,7 @@
   
 <ItemGroup>
   <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" />
+  <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.1" />
   <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.1" />
 </ItemGroup>
 
